@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utility Toolbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚙️ Utility Toolbox</h1>
+      <p>Perform conversions, calculations, and more in style!</p>
+    </header>
+
+    <main>
+      <div class="tabs">
+        <button id="converterTab" class="active-tab">Weight Converter</button>
+        <button id="calculatorTab">Calculator</button>
+        <button id="tempConverterTab">Temperature Converter</button>
+        <button id="distanceConverterTab">Distance Converter</button>
+      </div>
+
+      <!-- Weight Converter -->
+      <div id="converter" class="tool">
+        <h2>Weight Converter</h2>
+        <div class="input-group">
+          <label for="kgInput">Kilograms</label>
+          <input id="kgInput" type="number" placeholder="Enter kg">
+          <button id="convertToLbs">Convert to Lbs</button>
+        </div>
+        <p id="lbsOutput">Pounds: --</p>
+
+        <div class="input-group">
+          <label for="lbsInput">Pounds</label>
+          <input id="lbsInput" type="number" placeholder="Enter lbs">
+          <button id="convertToKg">Convert to Kg</button>
+        </div>
+        <p id="kgOutput">Kilograms: --</p>
+      </div>
+
+      <!-- Calculator -->
+      <div id="calculator" class="tool hidden">
+        <h2>Calculator</h2>
+        <div class="calculator">
+          <div class="calc-display">
+            <input type="text" id="calcScreen" readonly>
+          </div>
+          <div class="calc-buttons">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">/</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">*</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn">=</button>
+            <button class="btn">+</button>
+            <button id="clear" class="btn">C</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temperature Converter -->
+      <div id="tempConverter" class="tool hidden">
+        <h2>Temperature Converter</h2>
+        <div class="input-group">
+          <label for="celsiusInput">Celsius</label>
+          <input id="celsiusInput" type="number" placeholder="Enter Celsius">
+          <button id="convertToFahrenheit">Convert to Fahrenheit</button>
+        </div>
+        <p id="fahrenheitOutput">Fahrenheit: --</p>
+
+        <div class="input-group">
+          <label for="fahrenheitInput">Fahrenheit</label>
+          <input id="fahrenheitInput" type="number" placeholder="Enter Fahrenheit">
+          <button id="convertToCelsius">Convert to Celsius</button>
+        </div>
+        <p id="celsiusOutput">Celsius: --</p>
+      </div>
+
+      <!-- Distance Converter -->
+      <div id="distanceConverter" class="tool hidden">
+        <h2>Distance Converter</h2>
+        <div class="input-group">
+          <label for="metersInput">Meters</label>
+          <input id="metersInput" type="number" placeholder="Enter meters">
+          <button id="convertToMiles">Convert to Miles</button>
+        </div>
+        <p id="milesOutput">Miles: --</p>
+
+        <div class="input-group">
+          <label for="milesInput">Miles</label>
+          <input id="milesInput" type="number" placeholder="Enter miles">
+          <button id="convertToMeters">Convert to Meters</button>
+        </div>
+        <p id="metersOutput">Meters: --</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
